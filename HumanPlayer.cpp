@@ -14,12 +14,15 @@ const std::string & HumanPlayer::get_name() const
 
 void HumanPlayer::add_card(const Card &c)
 {
-
+    if (hand.size() < MAX_HAND_SIZE)
+        hand.push_back(c);
+    std::sort(hand.begin(), hand.end()); 
 }
 
 bool HumanPlayer::make_trump(const Card &upcard, bool is_dealer, 
                                     int round, std::string &order_up_suit) const
                                     {
+
                                         return 0;
                                     }
 
