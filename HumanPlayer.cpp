@@ -22,8 +22,18 @@ void HumanPlayer::add_card(const Card &c)
 bool HumanPlayer::make_trump(const Card &upcard, bool is_dealer, 
                                     int round, std::string &order_up_suit) const
                                     {
+                                        std::string called_suit;
 
-                                        return 0;
+                                        std::cout << "Human player " << HumanPlayer->get_name();
+                                        if (round == 1)
+                                        {
+                                            return 1;
+                                        }
+                                        else
+                                        {
+                                            cin >> called_suit
+                                        }
+                                        
                                     }
 
 void HumanPlayer::add_and_discard(const Card &upcard)
